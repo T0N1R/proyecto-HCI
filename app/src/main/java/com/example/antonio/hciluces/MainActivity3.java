@@ -20,7 +20,7 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 
 
-public class MainActivity2 extends Activity{
+public class MainActivity3 extends Activity{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,9 +37,9 @@ public class MainActivity2 extends Activity{
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if(isChecked) {
                     /* Toggle button is led 1 */
-                    new Background_get().execute("led1=1");
+                    new Background_get().execute("led2=1");
                 } else {
-                    new Background_get().execute("led1=0");
+                    new Background_get().execute("led2=0");
                 }
             }
         });
@@ -59,9 +59,9 @@ public class MainActivity2 extends Activity{
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if(isChecked) {
                     /* Toggle button is led 3 */
-                    new Background_get().execute("led3=1");
+                    new Background_get().execute("led2=1");
                 } else {
-                    new Background_get().execute("led3=0");
+                    new Background_get().execute("led2=0");
                 }
             }
         });
