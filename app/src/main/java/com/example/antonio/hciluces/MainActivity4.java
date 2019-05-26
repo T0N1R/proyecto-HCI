@@ -29,43 +29,30 @@ public class MainActivity4 extends Activity{
 
         /* Se definen los botones de la aplicacion   */
 
-        ToggleButton led1 = (ToggleButton) findViewById(R.id.Led1);
-        ToggleButton led2 = (ToggleButton) findViewById(R.id.Led2);
-        ToggleButton led3 = (ToggleButton) findViewById(R.id.Led3);
+        Switch ledgsala1 = (Switch) findViewById(R.id.switch1);
+        Switch ledsala2 = (Switch) findViewById(R.id.switch2);
 
-        led1.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+        ledgsala1.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                if(isChecked) {
-                    /* Toggle button is led 1 */
-                    new Background_get().execute("led4=1");
+                if (isChecked) {
+                    /* Switch is led 1 */
+                    new Background_get().execute("led1=1");
                 } else {
-                    new Background_get().execute("led4=0");
+                    new Background_get().execute("led1=0");
                 }
             }
         });
 
-        led2.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+        ledsala2.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                if(isChecked) {
-                    /* Toggle button is led 2 */
-                    new Background_get().execute("led4=1");
+                if (isChecked) {
+                    /* Switch is led 1 */
+                    new Background_get().execute("led1=1");
                 } else {
-                    new Background_get().execute("led4=0");
+                    new Background_get().execute("led1=0");
                 }
             }
         });
-
-        led3.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                if(isChecked) {
-                    /* Toggle button is led 3 */
-                    new Background_get().execute("led4=1");
-                } else {
-                    new Background_get().execute("led4=0");
-                }
-            }
-        });
-
     }
 
     @Override

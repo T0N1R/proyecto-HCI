@@ -29,25 +29,13 @@ public class MainActivity2 extends Activity{
 
         /* Se definen los botones de la aplicacion   */
 
-        ToggleButton led1 = (ToggleButton) findViewById(R.id.Led1);
-        ToggleButton led2 = (ToggleButton) findViewById(R.id.Led2);
-        ToggleButton led3 = (ToggleButton) findViewById(R.id.Led3);
+        Switch ledgarage1 = (Switch) findViewById(R.id.switch1);
+        Switch ledgarage2 = (Switch) findViewById(R.id.switch2);
 
-        led1.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+        ledgarage1.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                if(isChecked) {
-                    /* Toggle button is led 1 */
-                    new Background_get().execute("led1=1");
-                } else {
-                    new Background_get().execute("led1=0");
-                }
-            }
-        });
-
-        led2.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                if(isChecked) {
-                    /* Toggle button is led 2 */
+                if (isChecked) {
+                    /* Switch is led 1 */
                     new Background_get().execute("led2=1");
                 } else {
                     new Background_get().execute("led2=0");
@@ -55,13 +43,13 @@ public class MainActivity2 extends Activity{
             }
         });
 
-        led3.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+        ledgarage2.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                if(isChecked) {
-                    /* Toggle button is led 3 */
-                    new Background_get().execute("led3=1");
+                if (isChecked) {
+                    /* Switch is led 1 */
+                    new Background_get().execute("led2=1");
                 } else {
-                    new Background_get().execute("led3=0");
+                    new Background_get().execute("led2=0");
                 }
             }
         });

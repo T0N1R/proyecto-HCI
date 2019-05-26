@@ -6,24 +6,57 @@
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".MainActivity4"
-    tools:showIn="@layout/activity_main4">
+    tools:showIn="@layout/activity_main4"
+    android:gravity="center"
+    android:orientation="vertical"
+    >
 
-    <ToggleButton
-        android:id="@+id/Led1"
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/refri" />
+
+    <TextView
+        android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="ToggleButton" />
+        android:text="Cocina"
+        android:textSize="30sp"
+        android:paddingBottom="40dp"/>
 
-    <ToggleButton
-        android:id="@+id/Led2"
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="ToggleButton" />
+        android:orientation="horizontal"
+        android:layout_margin="20dp">
 
-    <ToggleButton
-        android:id="@+id/Led3"
+
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Luz1      "
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="ToggleButton" />
+        android:orientation="horizontal"
+        android:layout_margin="20dp">
+
+
+        <Switch
+            android:id="@+id/switch2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Luz2      "
+            android:textSize="24sp" />
+
+    </LinearLayout>
 
 </android.support.v7.widget.LinearLayoutCompat>
