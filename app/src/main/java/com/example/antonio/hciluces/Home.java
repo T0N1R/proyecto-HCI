@@ -17,7 +17,7 @@ public class Home extends AppCompatActivity {
         CardView videoButton = findViewById(R.id.video);
         videoButton.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                startActivity(new Intent(Home.this, MainActivity.class));
+                startActivity(new Intent(Home.this, Video.class));
 
             }
         });
