@@ -30,6 +30,30 @@ public class Home extends AppCompatActivity {
             }
         });
 
+        CardView infoButton = findViewById(R.id.info);
+        infoButton.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+               startActivity(new Intent(Home.this, Info.class));
+
+            }
+        });
+
+        CardView helpButton = findViewById(R.id.ayuda);
+        helpButton.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                startActivity(new Intent(Home.this, Help.class));
+
+            }
+        });
+
+        CardView aboutButton = findViewById(R.id.nosotros);
+        aboutButton.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                startActivity(new Intent(Home.this, About_Us.class));
+
+            }
+        });
+
 
 
     }

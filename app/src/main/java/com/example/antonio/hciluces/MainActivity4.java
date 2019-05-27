@@ -90,7 +90,7 @@ public class MainActivity4 extends Activity{
                 /*********************************************************/
                 /* Change the IP to the IP you set in the arduino sketch */
                 /*********************************************************/
-                URL url = new URL("http://192.168.0.6/?" + params[0]);
+                URL url = new URL("http://192.168.43.206/?" + params[0]);
                 HttpURLConnection connection = (HttpURLConnection) url.openConnection();
 
                 BufferedReader in = new BufferedReader(new InputStreamReader(connection.getInputStream()));
